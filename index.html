@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link type="image/svg+xml" href="/favicon.svg" rel="icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>agency-landing-page</title>
+  </head>
+  <body class="font-barlow text-lg font-semibold">
+    <header
+      class="relative min-h-130 bg-[url('./src/assets/img/image-header-mobile.jpg')] bg-cover bg-position-[center_bottom] md:bg-[url('./src/assets/img/image-header-desktop.jpg')] lg:min-h-160"
+    >
+      <div class="mx-auto w-9/10 text-white">
+        <!-- NAV BAR -->
+        <div class="flex justify-between py-10">
+          <a href="index.html">
+            <img class="w-30 md:w-40" src="./src/assets/img/logo.svg" alt="Sunnyside Logo" />
+          </a>
+
+          <button
+            class="cursor-pointer md:hidden"
+            id="menu-icon"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+          >
+            <img src="./src/assets/img/icon-hamburger.svg" alt="" />
+          </button>
+
+          <nav
+            id="nav-menu"
+            class="pointer-events-none absolute top-25 left-1/2 w-9/10 -translate-x-1/2 -translate-y-5 bg-white p-10 text-gray-600 opacity-0 transition-all duration-300 ease-out after:absolute after:-top-5 after:right-0 after:h-0 after:w-0 after:border-b-20 after:border-l-20 after:border-b-white after:border-l-transparent after:content-[''] md:pointer-events-auto md:static md:flex md:w-auto md:translate-x-0 md:translate-y-0 md:bg-transparent md:p-0 md:text-white md:opacity-100 md:after:hidden"
+          >
+            <ul class="flex flex-col items-center gap-10 md:flex-row md:gap-5">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Projects</a></li>
+              <li>
+                <a
+                  class="font-fraunces rounded-full bg-yellow-500 px-4 py-2 text-black uppercase transition hover:bg-yellow-400 md:bg-white md:hover:bg-white/40 md:hover:text-white"
+                  href="#"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- HERO CONTENT -->
+        <div class="mt-10 flex flex-col items-center gap-10">
+          <h1 class="font-fraunces text-center text-5xl font-black tracking-[8px] uppercase">
+            We are creatives
+          </h1>
+          <img class="h-20" src="./src/assets/img/icon-arrow-down.svg" alt="" />
+        </div>
+      </div>
+    </header>
+    <!-- MAIN GRID -->
+    <main>
+      <section class="grid lg:grid-cols-2">
+        <div
+          class="order-2 mx-auto flex w-9/10 max-w-150 flex-col justify-center gap-5 py-15 text-center lg:gap-10 lg:text-left"
+        >
+          <h2 class="font-fraunces text-4xl font-black text-gray-950">Transform your brand</h2>
+          <p class="text-gray-550">
+            We are full-service creative agency specializing in helping brands grow fast. Engage
+            your clients through compelling visuals that do most of the marketing for you.
+          </p>
+          <a
+            class="font-fraunces relative w-fit self-center px-2 text-base font-black text-gray-950 uppercase after:absolute after:bottom-0 after:left-0 after:-z-10 after:h-2.5 after:w-full after:rounded-full after:bg-yellow-400/30 after:transition after:content-[''] hover:after:bg-yellow-500 lg:self-start"
+            href="#"
+          >
+            Learn more
+          </a>
+        </div>
+        <picture class="block h-full w-full lg:order-2">
+          <source
+            media="(min-width:1024px)"
+            srcset="./src/assets/img/image-transform-desktop.jpg"
+          />
+
+          <img
+            class="h-full w-full object-cover"
+            src="./src/assets/img/image-transform-mobile.jpg"
+            alt="Egg on a yellow background"
+          />
+        </picture>
+      </section>
+      <section class="grid lg:grid-cols-2">
+        <div
+          class="order-2 mx-auto flex w-9/10 max-w-150 flex-col justify-center gap-5 py-15 text-center lg:gap-10 lg:text-left"
+        >
+          <h2 class="font-fraunces text-4xl font-black text-gray-950">
+            Stand out to the right audience
+          </h2>
+          <p class="text-gray-550">
+            Using a collaborative formula of designers, researchers, photographers, videographers,
+            and copywriters, we'll build and extend your brand in digital places.
+          </p>
+          <a
+            class="font-fraunces relative w-fit self-center px-2 text-base font-black text-gray-950 uppercase after:absolute after:bottom-0 after:left-0 after:-z-10 after:h-2.5 after:w-full after:rounded-full after:bg-red-400/30 after:transition after:content-[''] hover:after:bg-red-400 lg:self-start"
+            href="#"
+          >
+            Learn more
+          </a>
+        </div>
+        <picture class="block h-full w-full">
+          <source
+            media="(min-width:1024px)"
+            srcset="./src/assets/img/image-stand-out-desktop.jpg"
+          />
+
+          <img
+            class="h-full w-full object-cover"
+            src="./src/assets/img/image-stand-out-mobile.jpg"
+            alt="Pink cup on a coral background"
+          />
+        </picture>
+      </section>
+      <section class="grid lg:grid-cols-2">
+        <div class="relative grid items-end justify-items-center">
+          <picture class="w-full">
+            <source
+              media="(min-width:1024px)"
+              srcset="./src/assets/img/image-graphic-design-desktop.jpg"
+            />
+            <img
+              class="h-full w-full object-cover"
+              src="./src/assets/img/image-graphic-design-mobile.jpg"
+              alt="Two red cherries"
+            />
+          </picture>
+          <div class="absolute w-80 pb-10 text-center text-green-800">
+            <h2 class="font-fraunces mb-5 text-2xl font-black">Graphic design</h2>
+            <p class="text-[15px]">
+              Great design makes you memorable. We deliver artwork that underscores your brand
+              message and captures potential clients' attention.
+            </p>
+          </div>
+        </div>
+        <div class="relative grid items-end justify-items-center">
+          <picture class="w-full">
+            <source
+              media="(min-width:1024px)"
+              srcset="./src/assets/img/image-photography-desktop.jpg"
+            />
+            <img
+              class="h-full w-full object-cover"
+              src="./src/assets/img/image-photography-mobile.jpg"
+              alt="Orange with green leaves"
+            />
+          </picture>
+          <div class="absolute w-80 pb-10 text-center text-blue-800">
+            <h2 class="font-fraunces mb-5 text-2xl font-black">Photography</h2>
+            <p class="text-[15px]">
+              Increase your credibility by getting the most stunning, high-quality photos that
+              improve your business image.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- TESTIMONIALES -->
+    <section class="mx-auto w-9/10 max-w-300 py-20">
+      <h2 class="font-fraunces mb-20 text-center font-bold tracking-[5px] text-gray-400 uppercase">
+        Client Testimonials
+      </h2>
+      <div class="grid gap-10 text-center lg:grid-cols-3">
+        <article class="flex flex-col items-center gap-10">
+          <img
+            class="w-20 rounded-full"
+            src="./src/assets/img/image-emily.jpg"
+            alt="Photo of Emily R."
+          />
+          <p class="text-gray-550">
+            We put our trust in Sunnyside and they delivered, making sure our needs were met and
+            deadlines were always hit.
+          </p>
+          <div class="flex flex-col gap-2">
+            <h3 class="font-fraunces font-black text-gray-950">Emily R.</h3>
+            <p class="text-gray-400">Marketing Director</p>
+          </div>
+        </article>
+        <article class="flex flex-col items-center gap-10">
+          <img
+            class="w-20 rounded-full"
+            src="./src/assets/img/image-thomas.jpg"
+            alt="Photo of Thomas S."
+          />
+          <p class="text-gray-550">
+            Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a
+            satisfying and enjoyable experience.
+          </p>
+          <div class="flex flex-col gap-2">
+            <h3 class="font-fraunces font-black text-gray-950">Thomas S.</h3>
+            <p class="text-gray-400">Chief Operating Officer</p>
+          </div>
+        </article>
+        <article class="flex flex-col items-center gap-10">
+          <img
+            class="w-20 rounded-full"
+            src="./src/assets/img/image-jennie.jpg"
+            alt="Photo of Jennie F."
+          />
+          <p class="text-gray-550">
+            Incredible end result! Our sales increased over 400% when we worked with Sunnyside.
+            Highly recommended!
+          </p>
+          <div class="flex flex-col gap-2">
+            <h3 class="font-fraunces font-black text-gray-950">Jennie F.</h3>
+            <p class="text-gray-400">Business Owner</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- GALERÍA -->
+    <section class="grid grid-cols-2 lg:grid-cols-4">
+      <picture class="w-full">
+        <source
+          media="(min-width:1024px)"
+          srcset="./src/assets/img/image-gallery-milkbottles-desktop.jpg"
+        />
+        <img
+          class="w-full object-cover"
+          src="./src/assets/img/image-gallery-milkbottles-mobile.jpg"
+          alt="Milk bottles"
+        />
+      </picture>
+      <picture class="w-full">
+        <source
+          media="(min-width:1024px)"
+          srcset="./src/assets/img/image-gallery-orange-desktop.jpg"
+        />
+        <img
+          class="w-full object-cover"
+          src="./src/assets/img/image-gallery-orange-mobile.jpg"
+          alt="Orange slice"
+        />
+      </picture>
+      <picture class="w-full">
+        <source
+          media="(min-width:1024px)"
+          srcset="./src/assets/img/image-gallery-cone-desktop.jpg"
+        />
+        <img
+          class="w-full object-cover"
+          src="./src/assets/img/image-gallery-cone-mobile.jpg"
+          alt="Ice cream cone"
+        />
+      </picture>
+      <picture class="w-full">
+        <source
+          media="(min-width:1024px)"
+          srcset="./src/assets/img/image-gallery-sugarcubes-desktop.jpg"
+        />
+        <img
+          class="w-full object-cover"
+          src="./src/assets/img/image-gallery-sugar-cubes-mobile.jpg"
+          alt="Sugar cubes"
+        />
+      </picture>
+    </section>
+    <!-- FOOTER -->
+    <footer class="bg-green-500/70 p-10 text-center text-green-800">
+      <div class="mx-auto flex w-9/10 max-w-75 flex-col gap-6">
+        <h2 class="font-fraunces text-3xl font-black">sunnyside</h2>
+        <nav>
+          <ul class="flex justify-between">
+            <li>
+              <a class="transition hover:text-white" href="#">About</a>
+            </li>
+            <li>
+              <a class="transition hover:text-white" href="#">Services</a>
+            </li>
+            <li>
+              <a class="transition hover:text-white" href="#">Projects</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mt-10 flex justify-center gap-5">
+          <a class="group" href="#">
+            <img
+              class="transition duration-300 group-hover:brightness-0 group-hover:invert"
+              src="./src/assets/img/icon-facebook.svg"
+              alt="Facebook logo"
+            />
+          </a>
+          <a class="group" href="#"
+            ><img
+              class="transition duration-300 group-hover:brightness-0 group-hover:invert"
+              src="./src/assets/img/icon-instagram.svg"
+              alt="Instagram logo"
+          /></a>
+          <a class="group" href="#"
+            ><img
+              class="transition duration-300 group-hover:brightness-0 group-hover:invert"
+              src="./src/assets/img/icon-twitter.svg"
+              alt="Twitter logo"
+          /></a>
+          <a class="group" href="#"
+            ><img
+              class="transition duration-300 group-hover:brightness-0 group-hover:invert"
+              src="./src/assets/img/icon-pinterest.svg"
+              alt="Pinterest logo"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="/src/main.js" type="module"></script>
+  </body>
+</html>
